@@ -1,0 +1,33 @@
+{
+  "name": "darkwind/statutory-holidays-cn",
+  "description": "statutory holidays for china 中国法定节假日/法定工作日",
+  "type": "library",
+  "keywords": [
+    "date",
+    "chinese",
+    "holiday",
+    "workday",
+    "php"
+  ],
+  "homepage": "https://github.com/dark-wind/statutory-holidays-cn",
+  "support": {
+    "issues": "https://github.com/dark-wind/statutory-holidays-cn/issues",
+    "source": "https://github.com/dark-wind/statutory-holidays-cn"
+  },
+  "license": "Apache2.0",
+  "authors": [
+    {
+      "name": "darkwind",
+      "email": "shadow@dumii.cn",
+      "homepage": "https://dark-wind.github.io/"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Holiday\\": "src/"
+    }
+  }
+}
