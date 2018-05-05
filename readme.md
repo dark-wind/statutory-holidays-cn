@@ -13,7 +13,7 @@ composer require darkwind/statutory-holidays-cn
 use Holiday\Holiday;
 
 //判断是否为假期
-var_dump(Holiday::isHoliday('20180501'));
+Holiday::isHoliday('20180501');
     [
          "result" => "yes",
          "info" => [
@@ -25,7 +25,7 @@ var_dump(Holiday::isHoliday('20180501'));
          ],
     ]
 
-var_dump(Holiday::isHoliday('20180502'));
+Holiday::isHoliday('20180502');
     [
          "result" => "no",
          "info" => [
@@ -39,13 +39,13 @@ var_dump(Holiday::isHoliday('20180502'));
 
 
 //判断是否为工作日
-var_dump(Holiday::isWorkday('20180501'));
-var_dump(Holiday::isWorkday('20180502'));
-var_dump(Holiday::isWorkday('20180505'));
+Holiday::isWorkday('20180501');
+Holiday::isWorkday('20180502');
+Holiday::isWorkday('20180505');
 
 //2个日期间有多少个假日
-var_dump(Holiday::holidays('20180301', '20180601'));
-var_dump(Holiday::holidays('20180421', '20180502'));
+Holiday::holidays('20180301', '20180601');
+Holiday::holidays('20180421', '20180502');
 [
      "date" => [
        [
@@ -88,7 +88,7 @@ var_dump(Holiday::holidays('20180421', '20180502'));
 ]
 
 //追加星期信息
-var_dump(Holiday::isHolidayWithAppend('20180501'));
+Holiday::isHolidayWithAppend('20180501');
 [
      "result" => "no",
      "info" => [

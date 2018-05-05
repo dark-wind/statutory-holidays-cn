@@ -93,7 +93,10 @@ class Model
     {
         $start = self::parse($start, $format)->getTimestamp();
         $end = self::parse($end, $format)->getTimestamp();
-        $holiday = [];
+        $holiday = [
+            'date' => [],
+            'count' => 0
+        ];
         while ($start <= $end) {
             $holidayInfo = $this->isHoliday(date('Ymd', $start));
             if ($holidayInfo['result'] == 'yes') {
