@@ -12,7 +12,7 @@ $data = include $dataPath;
 
 //加2019年的数据
 $data2019Path = __DIR__ . '/data2019.php';
-$data2019 = include $dataPath;
+$data2019 = include $data2019Path;
 $data['workday'] = array_merge ($data['workday'], $data2019['workday']);
 $data['holiday'] = array_merge ($data['holiday'], $data2019['holiday']);
 
