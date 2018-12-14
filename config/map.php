@@ -10,6 +10,12 @@ $dataPath = __DIR__ . '/data.php';
 $custom = include $customPath;
 $data = include $dataPath;
 
+//加2019年的数据
+$data2019Path = __DIR__ . '/data2019.php';
+$data2019 = include $dataPath;
+$data['workday'] = array_merge ($data['workday'], $data2019['workday']);
+$data['holiday'] = array_merge ($data['holiday'], $data2019['holiday']);
+
 $workdays = array_merge($data['workday'], $custom['workday']);
 $holidays = array_merge($data['holiday'], $custom['holiday']);
 
